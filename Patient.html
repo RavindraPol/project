@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+        }
+        .main{
+            display: flex;
+        }
+        .column1{
+            width: 30%;
+            height: 100vh;
+            background-color: rgb(230, 226, 226);
+        }
+        .column2{
+            width: 70%;
+            height: 100vh;
+            background-color: rgb(75, 77, 78);
+            color: white;
+        }
+        .navigation{
+            margin-top: 0px;
+        }
+        .navigation li{
+            display: block;
+            padding: 10px;
+            margin-left: 20px;
+            
+            }
+            .navigation li a{
+                text-decoration: none;
+                color: black;
+            }
+            .navigation li:hover{
+                background-color: rgb(75, 77, 78);
+                color: white;
+            }
+        
+            
+        .menu{
+         width: 30px;
+         height: 5px;
+        margin: 2px 10px;
+         background-color: black;
+         border-radius: 6px;
+        }
+        .photo{
+            margin: 50px 0 0 70px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid black;
+        }
+        
+        p{
+            margin: 5px 0 5px 70px;
+        }
+        #para1{
+            margin: 0 0 40px 50px ;
+        }
+        .header{
+            margin: 20px ;
+            display: inline-flex;
+        }
+        .table{
+            margin: 100px;
+        }
+        #table1,th,tr, td{
+            border: 2px solid black;
+           padding: 10px;
+           border-collapse: collapse;
+        }
+        tr:nth-child(even){
+            background-color: rgb(230, 226, 226);
+            color: black;
+        }
+        tr:nth-child(odd){
+            color: white;
+        }
+        button{
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 10px;
+            background-color: chocolate;
+        }  
+        input[type=search]:active{
+            border-collapse: collapse;
+            border: 2px solid rgb(75, 77, 78);
+            outline: none;
+        }  
+        button:hover{
+            background-color: rgb(239, 105, 8);
+
+        }    
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="column1">
+        <div class="photo"></div>
+        <p>Sai Teja</p>
+        <p id="para1">Infertility center</p>
+        <div class="navigation">
+            <nav>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Details</a></li>
+                    <li><a href="#">Patient</a></li>
+                    <li><a href="#">Redding</a></li>
+                    <li><a href="#">Outpatient</a></li>
+                    <li><a href="#">Log out</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+    <div class="column2">
+        <div class="header">
+            <div class="red">
+                
+        <div class="menu"></div>
+        <div class="menu"></div>
+        <div class="menu"></div>
+    </div>
+        
+        <h2>Patient</h2>
+        <input type="search" id="search" placeholder="MRI, IP">
+        <div>Action</div>
+        <div>Alert</div>
+        <div>Settings</div>
+       
+    </div>
+    <div class="table">
+        <table id="table1">
+            
+                <tr>
+                    <th>S no</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Age</th>
+                    <th>Diagnosis</th>
+                    <th>Status</th>
+                </tr>
+            
+            
+                <tr>
+                    <td>1</td>
+                    <td>Frederick</td>
+                    <td>Male</td>
+                    <td>54</td>
+                    <td>None</td>
+                    <td><button>View profile</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Catherine</td>
+                    <td>Female</td>
+                    <td>50</td>
+                    <td>None</td>
+                    <td><button>View profile</button></td>
+                </tr>
+            
+        </table>
+    </div>
+    </div>
+</div>
+</body>
+</html>
